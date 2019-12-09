@@ -1,11 +1,41 @@
 header {
+    font-size: 90%;
     .top-notice {
         background: #9f86bd;
         padding-bottom: 10px;
-        font-size: 90%;
     }
     .main-nav {
+        font-weight: 100;
         background: #5f2d90;
         height: 5rem;
+        display: flex;
+        padding: 0em 7em 0em 6em;
+        ul {
+            display: flex;
+            li {
+                display: inline;
+            }
+        }
+        div.long-nav {
+            padding-top: 13px;
+            width: 80%;
+            ul {
+                li {
+                    flex: 1;
+                }
+            }
+        }
+        div.short-nav {
+            padding-top: 13px;
+            width: 20%;
+            ul {
+                li:first-child {
+                    flex: 2;
+                }
+                li {
+                    flex: 1;
+                }
+            }
+        }
     }
 }
