@@ -3,12 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/Navigation/Header';
 import { MainCarousel } from './components/Slides/MainCarousel';
+import Products from './containers/Products/Products';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <MainCarousel></MainCarousel>
+      <section className="product-section">
+       <h3>My products container</h3>
+        <Products></Products>
+      </section>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
